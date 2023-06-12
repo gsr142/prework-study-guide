@@ -38,16 +38,46 @@
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-          <li>always ensure you are working on the correct branch</li>
+          <li>The git command must precede every Git statement.</li>
+          <li>The checkout command is to move the working branch to a new branch.</li>
+          <li>The -b flag creates a new branch.</li>
+          <li>We have added the prefix, feature, to indicate that it is a feature. 
+            It is good practice to name the branches for the feature that will 
+            be developed by them to help indicate the purpose of each branch.</li>
+          
+          <li>Always ensure you are working on the correct branch, avoid coding directly on main or master.</li>
+          <li>Create feature branch to maintain main/master, and track changes made via feature branches.</li>
+          <li>A pull request, or PR, is used to merge a comparison branch (in our case, the feature branch) into the base branch.</li>
+          <li>Steps for version control<ol>
+            <li>git status: checks what branch we are currently on</li>
+            <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+            <li>git status: verify that you are working on feature branch</li>
+            <li>Write your code</li>
+            <li>git add -A: The add command adds modifications in the current working branch to the staging area. -A indicates we
+              want to add all changes. The changes are now staged to be committed.</li>
+            <li>git commit -m "add code": This command captures a snapshot of the currently staged changes, once committed,
+              the feature branch will be updated with the starter code.</li>
+            <li>git pull origin main: We need to double check that our local branch is synced with the base branch in github. 
+              this command pulls any changes from the base branch, and ensures we are working on updated code.</li>
+            <li>git push origin feature/starter-code: This command pushes the local changes we have made, to the remote Github branch.</li>
+            <li>Go to the repository on Github, main brainch will be displayed by default. Select you feature branch from the dropdown,
+              and click on the "Compare and pull request" button.</li>
+            <li>Give the PR a descriptive title. In the body, add instructions for the team to review the changes, functionality, and 
+              testing.</li>
+            <li>Designate the base branch as "main", and the comparison branch as your feature branch.</li>
+            <li>Click on the "Create pull request" button.</li>
+            <li>Once the feature branch has been reviewed and is ready to merge with the main branch, click the 
+              "Merge pull request" button.</li>
+
+          </ol></li>
         </ul>   
       </section>
    
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>A variable is a named container that allows us to store data in our code.</li>
+          <li>Control flow is the order in which a computer executes code in a script.</li>
         </ul>   
       </section>
     </main>
